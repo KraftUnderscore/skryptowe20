@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import CurrencyRates, CurrencySummary, Orders
-
+#TODO the class might not be needed at all - do I need admin access in the API? Maybe use it to populate database
 # Register your models here.
 class CurrencyRatesAdmin(admin.ModelAdmin):
     list_display = ('currency', 'date', 'mid', 'interpolated')
